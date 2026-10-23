@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    color: #67e8f9;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: #67e8f9;
+}
+
+.hero {
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1050px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.eyebrow,
+.section-label,
+.project-number {
+    color: #67e8f9;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #67e8f9;
+}
+
+.hero h2 {
+    color: #94a3b8;
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #cbd5e1;
+    max-width: 620px;
+    margin-bottom: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 7px;
+    background: #67e8f9;
+    color: #0b1120;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #a5f3fc;
+}
+
+section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 65px 30px;
+    scroll-margin-top: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin: 8px 0 20px;
+}
+
+section > p:not(.section-label) {
+    color: #cbd5e1;
+    max-width: 760px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background: #172338;
+    border: 1px solid #334155;
+    border-radius: 7px;
+    padding: 8px 16px;
+    color: #cbd5e1;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #111c30;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.project-card h3 {
+    font-size: 1.25rem;
+    margin: 12px 0;
+}
+
+.project-card > p:not(.project-number) {
+    color: #b8c4d5;
+}
+
+.project-card .tech {
+    color: #67e8f9;
+    font-size: 0.9rem;
+    margin-top: 18px;
+}
+
+.contact-note {
+    margin-top: 20px;
+}
+
+footer {
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+}
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
